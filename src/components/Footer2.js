@@ -1,11 +1,21 @@
-import React from "react";
+
+import React, { Component } from "react";
+
 import galerija from "./galerija.png";
 import simboli from "./simboli.png";
 
+export class Footer2 extends Component {
+  state= {
+    ime: "",
+    Mail: "",
+    
+  }
 
-function Footer2() {
+onsubmit= e => {e.preventDefault(); alert("Uspjesno ste se prijavili na News letter!" );}
+render()
+ { 
   return (
-    <div className="Footer">
+    <div className="Footer2">
       <div class="row97"> 
         <div class="col1"> 
           <h3 class="our"> Our School Specialists! </h3>
@@ -36,17 +46,18 @@ function Footer2() {
           <div class="hr8"> </div>
           <form>
             <label>
-              <input placeholder="   Name" type="text" name="ime" class="ime2" />
+              <input placeholder="   Name"  class="ime2" value={this.state.ime} onChange={e=>this.setState({ime: e.target.value})} />
             </label> <br />
             <label>
-              <input placeholder="   Email" type="text" name="email" class="email2" />
+              <input placeholder="   Email " value={this.state.mail} onChange={e=>this.setState({mail: e.target.value})} class="email2" />
             </label>
-            <button type="submit" value="submit" class="predaja2"> <b> Subcribe  </b> </button>
+            <button type="submit" value="submit" class="predaja2" onClick={e=>this.onsubmit(e)}> <b> Subcribe  </b> </button>
           </form>
 
         </div>
       </div>
     </div>
-  );
+    );
   }
+}
 export default Footer2;

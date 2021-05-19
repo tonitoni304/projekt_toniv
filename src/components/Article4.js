@@ -1,11 +1,19 @@
-import React from "react";
+import React, { Component } from "react";
 import slikica1 from "./slikica1.png";
 import slikica2 from "./slikica2.png";
 import slikica3 from "./slikica3.png";
 
+export class Article4 extends Component {
+  state= {
+    ime: "",
+    Mail: "",
+    Naslov: "",
+    Poruka: "",
+  }
 
-
-function Article4() {
+onsubmit= e => {e.preventDefault(); alert("Uspjesno ste poslali mail! Odgovorit cemo u najbrzem mogucem roku!" );}
+render()
+ { 
   return (
     <div className="Article4">
       <div class="row200">
@@ -19,18 +27,18 @@ function Article4() {
           <i> <p class="mali"> The mate was a mighty sailing man the Skipper brave and sure the lady met this fellow </p> </i>
           <form class="forma5">
             <label>
-              <input type="text" placeholder="    Ime" class="fime" />  
+              <input type="text" placeholder="    Ime" class="fime" value={this.state.ime} onChange={e=>this.setState({ime: e.target.value})} />  
             </label> <br />
             <label>
-              <input type="text" placeholder="    Mail" class="fmail" />  
+              <input type="text" placeholder="    Mail" class="fmail" value={this.state.Mail} onChange={e=>this.setState({Mail: e.target.value})} />  
             </label> <br />
             <label>
-              <input type="text" placeholder="    Naslov" class="fnaslov" />  
+              <input type="text" placeholder="    Naslov" class="fnaslov" value={this.state.Naslov} onChange={e=>this.setState({Naslov: e.target.value})} />  
             </label>
             <label> <br />
-              <input type="text" placeholder="    Poruka" class="fporuka" />  
+              <input type="text" placeholder="    Poruka" class="fporuka" value={this.state.Poruka} onChange={e=>this.setState({Poruka: e.target.value})} />  
             </label> <br />
-            <button type="submit" value="submit" class="predaja5"> <b> Pošalji  </b> </button>
+            <button type="submit" value="submit" class="predaja5" onClick={e=>this.onsubmit(e)}> <b> Pošalji  </b> </button>
           </form>
         </div>
         <div class="desni5">
@@ -62,4 +70,5 @@ function Article4() {
     </div>
   );
   }
+}
 export default Article4;

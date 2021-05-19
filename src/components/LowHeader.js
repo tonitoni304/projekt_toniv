@@ -1,7 +1,5 @@
 import React from "react";
 
-
-
 function Article3() {
   return (
     <div className="Article3">
@@ -21,5 +19,5 @@ function Article3() {
         
     
   );
-  }
+    }
 export default Article3;

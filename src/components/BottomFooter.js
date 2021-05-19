@@ -11,10 +11,10 @@ function Footerr() {
       <div class="row8">
        <h5 class="copp"> © Copyright 2021 Toni Vidovic | Sva Prava Pridrzava </h5>
        <div class="media">
-        <img src={fb} class="med1" /> 
-         <img src={twt} class="med2" />
-         <img src={int} class="med3" />
-         <img src={gg} class="med4" />
+       <a href="https://www.facebook.com/autoskolamarusic/">  <img src={fb} class="med1" /> </a>
+       <a href="https://www.youtube.com/watch?v=3G26u14TnsM">  <img src={twt} class="med2" /> </a>
+       <a href="https://www.facebook.com/autoskolamarusic/">  <img src={int} class="med3" /> </a>
+       <a href="https://www.facebook.com/autoskolamarusic/">  <img src={gg} class="med4" /> </a>
        </div>
       </div>
     </div>

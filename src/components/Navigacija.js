@@ -22,8 +22,8 @@ function Navigacija() {
           <h2 class="best"> BEST FOR YOU!</h2>
           <h1 class="make"> MAKE A SUCESSFUL DRIVE WITH US! </h1>
           <p class="bz1"> Jer mi smo najbolja autoskola u gradu Splitu! Lorem lorem lorem <br /> Dodite i uvjerite se u nasu kvalitetu! Lorem lorem lorem</p>
-          <button type="button" class="botun1"> READ MORE </button>
-          <button type="button" class="botun2"> SEE PRICING </button> </div>
+          <Link to="/About" class="lnk"> <button type="button" class="botun1"> READ MORE </button> </Link>
+          <Link to="/About" class="lnk"> <button type="button" class="botun2"> SEE CONTACT </button> </Link> </div> 
         </div>
       
       </div>

@@ -4,7 +4,7 @@ import Navigacija from "./Navigacija";
 import Article from "./Article";
 import Article2 from "./Article2";
 import Services from "./Services";
-import Footer from ".//Footer";
+import Footer from "./Footer";
 import BottomFooter from "./BottomFooter";
 
 
